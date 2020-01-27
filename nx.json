@@ -1,0 +1,28 @@
+{
+  "npmScope": "ncov",
+  "implicitDependencies": {
+    "workspace.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "real-time-map": {
+      "tags": []
+    },
+    "real-time-map-e2e": {
+      "tags": [],
+      "implicitDependencies": ["real-time-map"]
+    },
+    "api": {
+      "tags": []
+    },
+    "api-interfaces": {
+      "tags": []
+    }
+  }
+}
